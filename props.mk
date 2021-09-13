@@ -380,3 +380,7 @@ persist.log.tag.MAPI-SocketConnection=I \
 persist.log.tag.MAPI-SocketListener=I \
 persist.log.tag.MAPI-CommandProcessor=I \
 ro.surface_flinger.primary_display_orientation=0
+
+# MTKOSP
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.mtkosp.maintainer=jmpfbmx
