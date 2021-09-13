@@ -22,14 +22,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit from Redmi 6/A device
 $(call inherit-product, device/xiaomi/certus/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common MTKOSP stuff.
+$(call inherit-product, vendor/mtkosp/config/common_full_phone.mk)
+MTKOSP_OFFICIAL := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Boot Animation RES
 TARGET_BOOT_ANIMATION_RES := 720
-
-# Build Official
-REVENGEOS_BUILDTYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_RELEASE_NAME := Xiaomi Redmi 6/A
@@ -37,6 +36,6 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := certus
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi 6/A
-PRODUCT_NAME := lineage_certus
+PRODUCT_NAME := mtkosp_certus
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
