@@ -6,10 +6,6 @@ endif
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += ro.boot.btmacaddr=00:00:00:00:00:00
 
-# Fastbootd
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.fastbootd.available=true
-
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.radio.fd.counter=150 \
